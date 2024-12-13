@@ -1,0 +1,99 @@
+/* Estilo general para el body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9; /* Fondo suave */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+/* Título principal */
+h1 {
+  color: #2c3e50;
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Contenedor de las piscinas */
+#piscinas-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 piscinas por fila */
+  gap: 20px;
+  max-width: 1000px;
+  margin-top: 20px;
+  padding: 20px;
+  padding-left: 150px; /* Ajuste para mover todo hacia la derecha */
+  width: 100%;
+  justify-items: start; /* Alinea todos los elementos a la izquierda */
+}
+
+
+/* Estilo de cada círculo de piscina */
+.pool-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Nombre de la piscina */
+.pool-name {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Ocupación de la piscina */
+.pool-occupancy {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Estilo para la última actualización */
+#last-updated {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 18px;
+  padding: 10px;
+  color: #333;
+  font-weight: bold;
+  background-color: transparent !important; /* Fondo completamente transparente */
+  border: none !important; /* Elimina cualquier borde */
+  box-shadow: none !important; /* Elimina cualquier sombra */
+  display: inline-block; /* Asegura que no se vea como bloque con borde */
+}
+
+/* Estilo para cuando hay un error en la ocupación */
+.error {
+  color: #e74c3c; /* Rojo para error */
+}
+
+/* Estilo de los botones (si los hubiera) */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
